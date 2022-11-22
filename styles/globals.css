@@ -1,15 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
+
+
+
 @font-face {
   font-family: "Nunito";
-  src: url("../src/fonts/Nunito.ttf");
+  src: url("./fonts/Nunito.ttf");
 }
 @font-face {
   font-family: "Thinking_of_Betty";
-  src: url("../src/fonts/Thinking_of_Betty.ttf");
+  src: url("./fonts/Thinking_of_Betty.ttf");
 }
 @font-face {
   font-family: "BebasNeue";
-  src: url("../src/fonts/BebasNeue.ttf");
+  src: url("./fonts/BebasNeue.ttf");
 }
 
 @tailwind base;
