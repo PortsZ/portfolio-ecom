@@ -6,7 +6,7 @@ import Image from "next/image";
 const MyWork = () => {
   return (
     <section className="text-gradient body-font">
-      <div className="text-gradient-magenta text-6xl font-poppins  font-bold p-3">
+      <div className="text-gradient-magenta text-6xl font-BebasNeue  font-bold p-3">
         My work
       </div>
       <div className="container items-center w-full justify-center py-20 mx-auto">

@@ -10,7 +10,7 @@ const Home: NextPage = () => {
 
     <div className="flex min-h-screen flex-col items-center w-full bg-primary  py-2">
       <Head>
-        <title>Create Next App</title>
+        <title>PortsZFolio</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
