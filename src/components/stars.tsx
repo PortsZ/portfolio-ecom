@@ -8,11 +8,11 @@ const Stars = () => {
   const [currentValue, setCurrentValue] = React.useState(0);
   const [hoverValue, setHoverValue] = React.useState(undefined);
 
-  const handleClick = (value) => {
+  const handleClick = (value: any) => {
     setCurrentValue(value);
   };
 
-  const handleMouseOver = (value) => {
+  const handleMouseOver = (value: any) => {
     setHoverValue(value);
   };
 
