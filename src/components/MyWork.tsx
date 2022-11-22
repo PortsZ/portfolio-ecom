@@ -1,5 +1,5 @@
 import React from "react";
-import products from "../../pages/product/productsApi";
+import products from "../data/productsApi";
 import Link from "next/link";
 import Image from "next/image";
 

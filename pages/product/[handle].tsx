@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Navbar, Footer } from "../../src/components";
 import ProductDescription from "../../src/components/ProductDescription";
-import products from "./productsApi";
+import products from "../../src/data/productsApi";
 import { useRouter, } from "next/router";
 import ImageSlider from "../../src/components/ImageSlider";
 
