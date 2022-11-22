@@ -10,7 +10,7 @@ function ProductDescription(props: any){
       <h2 className="text-sm  title-font text-gray-900 tracking-widest">
         {props.product.project}
       </h2>
-      <h1 className="text-white text-3xl  title-font font-medium mb-1">
+      <h1 className="text-white text-3xl  title-font font-Nunito font-medium mb-1">
       {props.product.name}
       </h1>
       <div className="flex  mb-4 w-full justify-start items-center">
@@ -65,7 +65,7 @@ function ProductDescription(props: any){
       </div>
       <div className="flex gap-3">
         <span className="title-font font-medium text-2xl text-white">
-        {props.product.price}
+        ~{props.product.price}
         </span>
 
         <Link href={props.product.link}>
@@ -87,9 +87,9 @@ function ProductDescription(props: any){
         <button className="rounded-full w-10 h-10 bg-gray-800 p-0 border-0 inline-flex items-center justify-center text-red-600 ml-4">
           <svg
             fill="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
             className="w-5 h-5"
             viewBox="0 0 24 24"
           >

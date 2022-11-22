@@ -21,29 +21,31 @@ const ImageSlider = ({ image }: any) => {
   }
 
   return (
-    <div className="flex flex-col relative justify-center items-center lg:w-2/3 md:w-2/3 object-cover object-center">
+    <div className="flex flex-col relative justify-center 
+    items-center lg:w-2/3 md:w-2/3 object-cover object-center">
       {/* TESTE CARROSSEL______________________________________________________________ */}
 
       <div
         id="prev"
-        className="text-9xl absolute cursor-pointer left-[3%] z-10"
+        className="text-9xl absolute cursor-pointer left-[3%] z-10
+        drop-shadow-[0px_0px_5px_rgba(0,0,0,0.8)]"
         onClick={goToPrev}
       >
         &#8249;
       </div>
       <div
         id="next"
-        className="text-9xl absolute cursor-pointer right-[3%] z-10"
+        className="text-9xl drop-shadow-[0px_0px_5px_rgba(0,0,0,0.8)] 
+        absolute cursor-pointer right-[3%] z-10"
         onClick={goToNext}
       >
         &#8250;
       </div>
-
       <img
         alt="shit"
         width={1920}
         height={1080}
-        className="rounded-3xl  z-0"
+        className="rounded-3xl relative aspect-[16/10] object-contain z-0"
         src={image[index]}
       />
 

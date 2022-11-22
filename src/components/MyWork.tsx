@@ -9,7 +9,6 @@ const MyWork = () => {
       <div className="text-gradient-magenta text-6xl font-poppins  font-bold p-3">
         My work
       </div>
-
       <div className="container items-center w-full justify-center py-20 mx-auto">
         <div className="grid xl:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-6 justify-center">
           {products.map((item) => {
@@ -36,7 +35,8 @@ const MyWork = () => {
                               object-cover object-center"
                     src={itemImage}
                     alt={alt}
-                  /></div>
+                  />
+                  </div>
                   <div className="mt-4 text-start">
                     <h3 className="text-gradient  text-s tracking-widest title-font mb-1">
                       {project}
@@ -63,7 +63,7 @@ const MyWork = () => {
                         &nbsp;:&nbsp;
                       </p>
                       <span className="font-medium text-gradient text-2xl font-poppins">
-                        {price}
+                        ~{price}
                       </span>
                     </div>
                   </div>
