@@ -1,23 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap");
 
 @font-face {
-    font-family: 'Thinking_of_Betty';
-    src: url('./fonts/Thinking_of_Betty.woff2') format('woff2'),
-         url('./fonts/Thinking_of_Betty.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
+  font-family: "Thinking_of_Betty";
+  src: url("/fonts/Thinking_of_Betty.woff2") format("woff2"),
+    url("/fonts/Thinking_of_Betty.woff") format("woff"),
+    url("/fonts/Thinking_of_Betty.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
 }
 
-@font-face {
-  font-family: "Thinking_of_Betty2";
-  src: url("./fonts/Thinking_of_Betty.ttf");
-  
-}
+
 @font-face {
   font-family: "BebasNeue";
-  src: url("./fonts/BebasNeue.ttf");
+  src: url("/fonts/BebasNeue.ttf");
 }
 
 @tailwind base;
@@ -55,8 +51,7 @@
 }
 
 .text-gradient-magenta {
-  
-  z-index:99;
+  z-index: 99;
   background: hsla(339, 100%, 50%, 1);
 
   background: linear-gradient(
@@ -215,27 +210,42 @@
 }
 
 .spinner {
-
   -webkit-animation: rotation 1s infinite linear;
   -moz-animation: rotation 1s infinite linear;
   -o-animation: rotation 1s infinite linear;
   animation: rotation 1s infinite linear;
-  border: 6px solid rgba(0,174,239, .15)
+  border: 6px solid rgba(0, 174, 239, 0.15);
 }
 
-@-webkit-keyframes rotation{
-  from {-webkit-transform: rotate(0deg);}
-  to {-webkit-transform: rotate(359deg);}
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+  }
 }
-@-moz-keyframes rotation{
-  from {-moz-transform: rotate(0deg);}
-  to {-moz-transform: rotate(359deg);}
+@-moz-keyframes rotation {
+  from {
+    -moz-transform: rotate(0deg);
+  }
+  to {
+    -moz-transform: rotate(359deg);
+  }
 }
-@-o-keyframes rotation{
-  from {-o-transform: rotate(0deg);}
-  to {-o-transform: rotate(359deg);}
+@-o-keyframes rotation {
+  from {
+    -o-transform: rotate(0deg);
+  }
+  to {
+    -o-transform: rotate(359deg);
+  }
 }
-@keyframes rotation{
-  from {transform: rotate(0deg);}
-  to {transform: rotate(359deg);}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
 }
