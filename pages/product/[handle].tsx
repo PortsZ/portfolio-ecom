@@ -24,7 +24,7 @@ function Loading(){
     router.events.off('routeChangeError', handleComplete)
     }
   })
-  return loading && (
+  return  (
     <div className="flex min-h-screen flex-col items-center w-full bg-primary  py-2 ">
         <div className="flex min-h-screen flex-col items-center w-full bg-primary  py-2"></div>
         <span className="text-orange-500">SHIT FUCK</span>
