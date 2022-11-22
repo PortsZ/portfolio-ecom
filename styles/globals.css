@@ -10,6 +10,7 @@
 @font-face {
   font-family: "Thinking_of_Betty";
   src: url("./fonts/Thinking_of_Betty.ttf");
+  src: font-url("./fonts/Thinking_of_Betty.ttf");
 }
 @font-face {
   font-family: "BebasNeue";
