@@ -5,48 +5,55 @@ import products from "../../src/data/productsApi";
 import { useRouter, } from "next/router";
 import ImageSlider from "../../src/components/ImageSlider";
 
+export async function getServerSideProps(context:any) {
+  const id = context.query.id;
 
-
-function Loading(){
-  const router = useRouter();
-  const [loading, setLoading] = useState(false);
-  useEffect(()=>{
-    const handleStart = (url: any) => (url !== router.asPath) && setLoading(true);
-    const handleComplete = (url: any) => (url === router.asPath) && setTimeout(()=>{setLoading(false)},100);
-    
-    router.events.on('routeChangeStart', handleStart)
-    router.events.on('routeChangeComplete', handleComplete)
-    router.events.on('routeChangeError', handleComplete)
-
-    return () => {
-      router.events.off('routeChangeStart', handleStart)
-    router.events.off('routeChangeComplete', handleComplete)
-    router.events.off('routeChangeError', handleComplete)
-    }
-  })
-  return  (
-    <div className="flex min-h-screen flex-col items-center w-full bg-primary  py-2 ">
-        <div className="flex min-h-screen flex-col items-center w-full bg-primary  py-2"></div>
-        <span className="text-orange-500">SHIT FUCK</span>
-    </div>
-  )
+  return{
+    props:{id:id}
+  
+  }
+  
 }
+
+// function Loading(){
+//   const router = useRouter();
+//   const [loading, setLoading] = useState(false);
+//   useEffect(()=>{
+//     const handleStart = (url: any) => (url !== router.asPath) && setLoading(true);
+//     const handleComplete = (url: any) => (url === router.asPath) && setTimeout(()=>{setLoading(false)},100);
+    
+//     router.events.on('routeChangeStart', handleStart)
+//     router.events.on('routeChangeComplete', handleComplete)
+//     router.events.on('routeChangeError', handleComplete)
+
+//     return () => {
+//       router.events.off('routeChangeStart', handleStart)
+//     router.events.off('routeChangeComplete', handleComplete)
+//     router.events.off('routeChangeError', handleComplete)
+//     }
+//   })
+//   return  (
+//     <div className="flex min-h-screen flex-col items-center w-full bg-primary  py-2 ">
+//         <div className="flex min-h-screen flex-col items-center w-full bg-primary  py-2"></div>
+//         <span className="text-orange-500">SHIT FUCK</span>
+//     </div>
+//   )
+// }
 
 
 
 function getRouterId() {
   const router = useRouter();
-  const { id } = router.query;
-  return id as string;
+  const id = router.query.id;
+  return id as unknown as number;
 }
 
-const productPage = () => {
+const productPage = (props: any) => {
 
   const router = useRouter();
-  if (!router.isReady) return (<><Loading/></>)
-  const id = getRouterId();
-  const idIndex = parseInt(id);
-  const item = products[idIndex];
+  // if (!router.isReady) return (<><Loading/></>)
+  const id = props.id;
+  const item = products[id];
   const image1 = item.image1Src;
   const image2 = item.image2Src;
   const image3 = item.image3Src;

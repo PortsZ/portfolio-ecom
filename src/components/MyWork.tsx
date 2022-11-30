@@ -28,7 +28,7 @@ const MyWork = () => {
               duration-[150ms] ease-out hover:ease-in
               border-solid border-2 border-[#120e1c]  hover:border-sky-200 "
               >
-                <Link itemID="" href={`product/${product}?id=${id}`}>
+                <Link itemID="" href={`product/${id}`}>
                   <div className="aspect-video">
                   <img
                     className="rounded block relative aspect-video h-auto w-full
